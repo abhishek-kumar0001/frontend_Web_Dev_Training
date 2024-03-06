@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Overflow</title>
+        <style>
+            div{
+                height: 100px;
+                border: 2px solid red;
+                margin-top: 50px;
+            }
+            div.visible{
+                overflow: visible;
+            }
+            div.hidden{
+                overflow: hidden;
+            }
+            div.scroll{
+                overflow-y: scroll;
+            }
+            div.auto{
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="visible">
+            <h2>Visible Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repudiandae unde? Nemo laboriosam ipsam eligendi? Corrupti, doloremque sed natus corporis vero recusandae pariatur molestiae dignissimos? Vel quo hic sed quasi nihil, commodi ut nam eveniet pariatur quisquam soluta, aliquam molestias neque voluptate, sapiente maiores doloribus veritatis tempora obcaecati vero temporibus. Accusantium, alias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, id.</p>
+        </div>
+        <div class="hidden">
+            <h2>Outside contentis invisible</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repudiandae unde? Nemo laboriosam ipsam eligendi? Corrupti, doloremque sed natus corporis vero recusandae pariatur molestiae dignissimos? Vel quo hic sed quasi nihil, commodi ut nam eveniet pariatur quisquam soluta, aliquam molestias neque voluptate, sapiente maiores doloribus veritatis tempora obcaecati vero temporibus. Accusantium, alias.
+            orem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ex.
+            </p>
+        </div>
+        <div class="scroll">
+            <h2>Creates always a scroll bar for disply rest content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repudiandae unde? Nemo laboriosam ipsam eligendi? Corrupti, doloremque sed natus corporis vero recusandae pariatur molestiae dignissimos? Vel quo hic sed quasi nihil, commodi ut nam eveniet pariatur quisquam soluta, aliquam molestias neque voluptate, sapiente maiores doloribus veritatis tempora obcaecati vero temporibus. Accusantium, alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, molestiae.</p>
+        </div>
+        <div class="auto">
+            <h2>It creates a scroll bar when necessary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repudiandae unde? Nemo laboriosam ipsam eligendi? Corrupti, doloremque sed natus corporis vero recusandae pariatur molestiae dignissimos? Vel quo hic sed quasi nihil, commodi ut nam eveniet pariatur quisquam soluta, aliquam molestias neque voluptate, sapiente maiores doloribus veritatis tempora obcaecati vero temporibus. Accusantium, alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, aliquam.
+            </p>
+        </div>
+    </body>
+</html>

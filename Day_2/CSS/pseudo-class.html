@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo-class</title>
+        <style>
+            a:link{
+                color: blue;
+                text-decoration: none;
+            }
+            /* unvisited link */
+
+            /* visited link */
+            a:visited{
+                color: green;
+            }
+
+            /* mouse over link */
+            a:hover{
+                color: yellow;
+            }
+
+            /* selected link */
+            a:active{
+                color: red;
+            }
+
+            div{
+                color: blue;
+            }
+            p{
+                display: none;
+                background-color: green;
+                padding: 20px;
+            }
+
+            div:hover p{
+                display: block;
+            }
+            div div:first-child {
+                color: red;
+            }
+            div:first-child div {
+                color: blueviolet;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="https://www.google.com/" target="_blank">Google.com</a>
+        <div>Mouse Hover me to Show a paragraph
+            <p>This is paragraph</p>
+        </div>
+
+        <div class="parent">This is Div parent.
+            <div class="first-child">First Child of div
+                <div>first Grand child of first div child</div>
+                <div>second Grand child of first div child</div>
+                <div>third Grand child of first div child</div>
+            </div>
+            <div class="second-child">Second Child of div
+                <div>first Grand child of Second div child</div>
+                <div>second Grand child of Second div child</div>
+                <div>third Grand child of Second div child</div>
+            </div>
+            <div class="third-child">Third Child of div</div>
+        </div>
+        
+    </body>
+</html>

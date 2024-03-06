@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conbinators</title>
+        <style>
+            div p{
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+            }
+           div .para1 p{
+                color: red;
+                
+            }
+            .para1 + p{
+                background-color: red;
+            }
+            .para2 ~ p{
+                background-color: aqua;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="para1">First child of div <p>child of para1</p></p>
+            <p class="para2">Second child of div</p>
+            <p class="para3">Third child of div</p>
+            <p class="para4">Fourth child of div</p>
+            <p class="para3">Fifth child of div</p>
+        </div>
+    </body>
+</html>

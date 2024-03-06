@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Psuedo-Element</title>
+        <style>
+            p{
+                margin: 25px;
+            }
+            p::first-letter{
+                color: red;
+                background-color: blue;
+            }
+            p::first-line{
+                background-color: yellow;
+            }
+            p:after{
+                content: url(./mypicture.jpg);
+
+            }
+            p::selection{
+                background-color: purple;
+                color: aqua;
+            }
+            ::marker{
+                color: red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae voluptate ea sit aut in magni dolores, ipsum eius? Dolore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero nulla aut quia dolor accusantium impedit repudiandae maxime optio reprehenderit, nostrum id consequatur nobis ad ab incidunt, commodi necessitatibus delectus nisi sed quibusdam adipisci. Ut, aspernatur consectetur sint corrupti delectus dolore repudiandae dolores odit quisquam molestias molestiae porro vero officiis quod ab! Laborum nihil facilis accusamus repudiandae ad soluta perspiciatis. Exercitationem minus tempore sunt ut tenetur. Mollitia vel quos, ea recusandae, rerum totam voluptatem laboriosam molestias id vitae, quae assumenda asperiores tempore voluptatum. Odio corporis suscipit quo temporibus neque! Vero fuga officiis tenetur iusto libero necessitatibus iure quibusdam a impedit id.</p>
+        <ol>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ol>
+        <ul>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ul>
+    </body>
+</html>
