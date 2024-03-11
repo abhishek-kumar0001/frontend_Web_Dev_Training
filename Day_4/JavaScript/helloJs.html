@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Introductin</title>
+        <style>
+            body{
+                text-align: center;
+                padding: 20px;
+            }
+            button{
+                background-color: peru;
+                border: none;
+                border-radius: 10px;
+                color: #ffffff;
+                padding: 10px 20px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="demo"></div>
+        <button id="changeBtn">Click me to change</button>
+        <script>
+            let demo = document.getElementById("demo");
+            let changeBtn = document.getElementById("changeBtn");
+            let flag = 1;
+            demo.innerHTML = "Hello JavaScript";
+            demo.style.fontSize = "35px";
+
+            // change heading
+            changeBtn.addEventListener("click",(e)=>{
+                myFunction(flag);
+                flag++;
+                
+            })
+            
+
+
+            function myFunction(flag) {
+                console.log(flag);
+                if(flag % 2 == 0){
+                    demo.innerHTML = "Hello JavaScript";
+                    console.log("hello ");
+                    console.log(flag);
+                    changeBtn.style.backgroundColor = "peru";
+                    changeBtn.innerHTML = "Click me to change";
+                }else{
+                    demo.innerHTML = "Namste JavaScript";
+                    console.log("namaste");
+                    console.log(flag);
+                    changeBtn.style.backgroundColor = "red";
+                    changeBtn.innerHTML = "Go Back!";
+                }
+              
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+        .heading{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .content{
+            font-size: 25px;
+        }
+        #changeBtn{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .inputBox{
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .searchVal{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">Event</h2>
+    <h3 class="content">Content</h3>
+    <button type="button" id="changeBtn">Change</button>
+    <div class="inputBox">
+        <label for="searchBox">Input Box</label>
+        <input type="text" name="searchBox" id="searchBox">
+    </div>
+    <div class="searchVal">Value: <span></span></div>
+
+    <script src="./event.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Types in Js</title>
+        <style>
+            div{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="length"></div>
+        <div id="weight"></div>
+        <div id="color"></div>
+        <div id="lastName"></div>
+        <div id="true"></div>
+        <div id="false"></div>
+        <div id="person"></div>
+        <div id="cars"></div>
+        <div id="date"></div>
+
+        <script>
+            // Numbers:
+            let length = 16;
+            let weight = 7.5;
+            document.getElementById("length").innerHTML = "Length = " + length;
+            document.getElementById("weight").innerHTML = "Weight = " + weight;
+            // Strings:
+            let color = "Yellow";
+            let lastName = "Roy";
+            document.getElementById("color").innerHTML = "Color: " + color;
+            document.getElementById("lastName").innerHTML = "LastName: " + lastName;
+    
+            // Booleans
+            let x = true;
+            let y = false;
+            document.getElementById("true").innerHTML = "Value: " + x;
+            document.getElementById("false").innerHTML = "Value: " + y;
+    
+            // Object:
+            const person = {firstName:"John", lastName:"Doe"};
+            document.getElementById("person").innerHTML = 
+            "First Name: " + person.firstName + "<br/> Last Name: " + person.lastName;
+    
+            // Array object:
+            const cars = ["Saab", "Volvo", "BMW"];
+            document.getElementById("cars").innerHTML = "Cars: " + cars + "&nbsp;&nbsp;&nbsp; Last Element of array: " + cars[2];
+    
+            // Date object:
+            const date = new Date("2024-01-26");
+            document.getElementById("date").innerHTML = "Date: " + date;
+        </script>
+    </body>
+   
+</html>
