@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color--:#202020;
+    --secondary-color--:#ffffff;
+    --ternary-color--:#e8ab55;
+    --border-radius--:10px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 100px;
+    background-color: var(--primary-color--);
+    color: var(--secondary-color--);
+    font-size: 18px;
+
+    &>nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 30px;
+        /* right: 100px */
+
+        &>.name{
+            font-weight: bold;
+        }
+
+        &>.navLinks{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+            &>li{
+                list-style: none;
+
+                &>a{
+                    text-decoration: none;
+                    color: var(--secondary-color--);
+                    transition: 0.5s;
+                }
+                &>a:hover{
+                    text-decoration: underline;
+                    color: var(--ternary-color--);
+                    transform: scale(2);
+
+                }
+            }
+        }
+    }
+
+    &>main{
+
+        &>#home{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            
+
+            &>.leftSection{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                &>.intro{
+                    font-size: 30px;
+
+                    &>.emphasize{
+                        color: var(--ternary-color--);
+
+                    }
+                }
+
+                &>.socialMedia{
+                    font-size: 40px;
+                    color:  var(--ternary-color--);
+                    cursor: pointer;
+                    display: flex;
+                    gap: 15px;
+                    
+                    &>.icon{
+                        transition: 0.5s;                  
+                    }
+                    &>.icon:hover{
+                        transform: scale(1.2);
+                    }
+                }
+
+            }
+
+            &>.rightSection{
+                
+                &>img{
+                    width: 500px;
+                    border-radius: var(--border-radius--);
+                    box-shadow: 0 0 5px 5px var(--secondary-color--);
+                }
+            }
+        }
+
+        &>#about{
+            &>.heading{
+                text-align: center;
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+}
+

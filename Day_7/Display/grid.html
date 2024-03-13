@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+       
+        .wrapper{
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            gap: 20px;
+            justify-content: center;
+           
+        }
+        .box{
+            border: 2px solid darkmagenta;
+            display: grid;
+            place-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box box1">One</div>
+        <div class="box box2">Two</div>
+        <div class="box box3">Three</div>
+        <div class="box box4">Four</div>
+        <div class="box box4">Five</div>
+        <div class="box box4">Six</div>
+    </div>
+</body>
+</html>
