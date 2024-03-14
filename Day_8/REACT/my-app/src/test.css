@@ -1,0 +1,25 @@
+.test{
+    margin-top: 20px;
+    padding-inline: 50px;
+    background-color: #1d57c4;
+    color: #ffffff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    
+    &>.navLinks{
+        display: flex;
+        gap: 20px;
+
+        &>li{
+            list-style: none;
+          
+            &>a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

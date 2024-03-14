@@ -1,0 +1,29 @@
+.card{
+    box-shadow: 0 0 5px #565454;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+
+    &>img{
+        height: 150px;
+    }
+    &>.details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+
+        &>.productName{
+            color: #1d57c4;
+        }
+        &>.rate{
+            color: #148114;
+        }
+    }
+}
