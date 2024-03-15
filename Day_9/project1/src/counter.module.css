@@ -1,0 +1,31 @@
+.counterWrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #d9d7d7;
+    border-radius: 10px;
+    background-color: #d9d7d7;
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    font-size: 25px;
+
+    &>button{
+        padding: 10px 25px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    &>#btnInc{
+        background-color: #0c630c;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+    }
+    &>#btnDec{
+        background-color: #030369; 
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,27 @@
+#btnShowHide{
+  background-color: #f01d0e;
+  color: #ffffff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 50px auto;
+  
+}
+
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 10px;
+  font-size: 20px;
+
+  &>input[type="text"]{
+    padding: 8px 20px;
+    
+  }
+}
